@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Generating Random Background</title>
+    </head>
+    <script>
+        function bg()
+        {
+            var colorformat="0123456789ABCDEF";
+            var hash='#'; 
+            for(var i=0;i<6;i++)
+            {
+                hash+=colorformat[(Math.floor(Math.random()*16))];
+            }
+            document.body.style.backgroundColor=hash;
+            color.innerHTML=hash;
+        }
+        a.addEventListener("click",bg);
+        
+        bg();
+    </script>
+    <body>
+    <center>
+        <button id="a">Generate Random background</button></br>
+        <span id="color"></span>
+    </center>
+    </body>
+</html>

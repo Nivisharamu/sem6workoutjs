@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Replace String</title>
+    </head>
+    <script>
+      function replacestr(text)
+      {
+          var a=text.split('');
+          for(var i=0;i<a.length;i++)
+          {
+              switch(a[i])
+              {
+                  case ' ':
+                      break;//breaks when it sees a space between words
+                  case 'Z':
+                      a[i]='A';//changes Z to A
+                  case 'z':
+                      a[i]='a';//changes z to a
+                  default:
+                      a[i]=String.fromcharCode(1+a[i].charCodeAt(0));//takes input as the letter's next character
+              }
+          }
+          return a.join('');//join as a whole string atlast  
+      }
+     console.log(replacestr("nivisha"));
+    </script>
+    <body>
+    </body>
+</html>

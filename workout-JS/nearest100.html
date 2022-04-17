@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Nearest 100</title>
+    </head>
+        <script>
+        function nearest(num1,num2)
+        {
+         var a=100-num1;
+         var b=100-num2;
+         if(a<b)
+             return num1;
+         else
+             return num2;
+        }
+        document.writeln(nearest(80,90));
+        </script>
+    <body>
+    </body>
+</html>

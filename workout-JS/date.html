@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>DATE</title>
+    </head>
+        <script>
+        function curdate(string)  
+        {
+            today=new Date();//gets todays date and puts in today
+            //seperates as date,month ,year
+            var date=today.getDate();
+            var month=today.getMonth();
+            var year=today.getFullYear();
+            if(date<10)
+            {
+                date="0"+date;//add 0 infront if less than 10
+            }
+            if(month<10)
+            {
+                month="0"+month;
+            }
+            return(date+string+month+string+year);//seperators like / and - are used inbetween
+        }
+        document.writeln(curdate('/'));//seperator is given
+        document.writeln(curdate('-'));
+        </script>
+    <body>
+    </body>
+</html>
